@@ -131,7 +131,11 @@ a lot shorter than this::
     # For this module, we're going to do key=value style arguments.
     # Modules can choose to receive json instead by adding the string:
     #   WANT_JSON
-    # Somewhere in the file.
+    # Somewhere in the file.  Note that this comment has that string
+    # in the file, so you must remove that string from this comment
+    # or else the code below, which does *not* read arguments
+    # as json, will not work.
+    #
     # Modules can also take free-form arguments instead of key-value or json
     # but this is not recommended.
 
